@@ -1,0 +1,1 @@
+A selection of mock-up OOP "assignments" to be used in tutorial 1 of OOP 2025

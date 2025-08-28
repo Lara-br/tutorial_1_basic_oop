@@ -1,21 +1,23 @@
 import numpy as np
-from collections import Counter
 from baseclass import ModelABC
 from helper import *
 
+
 class KNN(ModelABC):
-    def __init__(self, k: int = 3):
+    def __init__(self, k: int = 3) -> None:
         pass
-    def fit(self, observations: np.ndarray, labels: np.ndarray):
+
+    def fit(self, observations: np.ndarray, labels: np.ndarray) -> None:
         pass
-    
+
     def predict(self, observations: np.ndarray) -> np.ndarray:
         predictions = [self._predict_single(x) for x in observations]
         return np.array(predictions)
 
-    def _predict_single(x):
+    def _predict_single(self) -> None:
         pass
-    
+
+
 data, labels, apples, oranges = generate_true_data(50)
 new_fruit = generate_obs_data(10)
 

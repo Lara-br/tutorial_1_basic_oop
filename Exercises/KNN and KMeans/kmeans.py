@@ -2,7 +2,7 @@ import numpy as np
 from baseclass import ModelABC
 from helper import *
 
-
+#Laras solution
 class KMeans(ModelABC):
     def __init__(self, k: int) -> None:
         self.k = k
